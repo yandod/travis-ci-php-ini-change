@@ -1,0 +1,3 @@
+language: php
+before_script: echo 'date.timezone = "Asia/Tokyo"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+script: php -i | grep timezone
